@@ -1,7 +1,7 @@
 //Require Express Module for running the Express Server
 const express = require("express");
 //Create Port
-const port = 8000;
+const port = process.env.PORT || 8000;
 //Require Module Path for Directory
 const path = require("path");
 //Require the MongoDB Database File from Mongoose.js
@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 //Middleware - URL Encoder
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 //Middleware - Static Files
 app.use(express.static("assets"));
 
