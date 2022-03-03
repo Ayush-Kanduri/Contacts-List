@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= locals.title %></title>
+		<script
+			src="https://kit.fontawesome.com/34162fcf4d.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="/css/home.css" />
+		<script defer type="text/javascript" src="/js/home.js"></script>
+	</head>
+	<body>
+		<h1 id="header">
+			<i class="fas fa-address-book"></i>
+			My Contacts List
+		</h1>
+		<div id="contact-box">
+			<ul>
+				<%for(let i of contact_list){%>
+				<li class="contact-tag">
+					<div id="contact-details">
+						<p class="name"><%= i.name%></p>
+						<p class="phone"><%= i.phone%></p>
+					</div>
+					<div id="delete-button">
+						<a href="/delete-contact/?id=<%= i._id %>"
+							><i class="fas fa-window-close"></i
+						></a>
+					</div>
+				</li>
+				<%}%>
+			</ul>
+		</div>
+		<div id="form-div">
+			<form action="/create-contact" method="POST" id="form">
+				<input type="text" name="name" placeholder="Enter Name" required />
+				<!-- pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" => 1234-567-890 -->
+				<input
+					type="number"
+					name="phone"
+					placeholder="Enter Phone Number"
+					required
+				/>
+				<button type="submit">Add Contact</button>
+			</form>
+		</div>
+	</body>
+</html>

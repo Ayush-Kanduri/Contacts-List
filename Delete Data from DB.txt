@@ -1,0 +1,52 @@
+For local storage:-
+
+//Delete-Contact Page URL Controller
+app.get("/delete-contact", (request, response) => {
+	//Get the Phone Number from the Query Param URL
+	let phone = request.query.phone;
+	//Loop through the Contact List Array to find the Contact Object with the Phone Number
+	let contactIndex = contactList.findIndex(
+		(contact) => contact.phone === phone
+	);
+	//Delete the Contact Object from the Contact List Array
+	if (contactIndex !== -1) {
+		contactList.splice(contactIndex, 1);
+	}
+	//Redirect to the Home Page URL where the updated Contact List is displayed
+	return response.redirect("back");
+});
+
+
+<div id="delete-button">
+    <a href="/delete-contact/?phone=<%= i.phone %>">
+        <i class="fas fa-window-close"></i>
+    </a>
+</div>
+
+
+
+For mongodb:-
+
+//Delete-Contact Page URL Controller
+app.get("/delete-contact", (request, response) => {
+	//Get the ID from the Query Param URL
+	let id = request.query.id;
+	//Find the Contact in the DB based on the ID & then delete it.
+	Contact.findByIdAndDelete(id, (err) => {
+		//No 2nd argument since we are only deleting a Contact.
+		if (err) {
+			console.log("Error in Deleting the Contact");
+			return;
+		}
+		//Redirect to the Home Page URL where the updated Contact List is displayed
+		return response.redirect("back");
+	});
+});
+
+
+
+<div id="delete-button">
+    <a href="/delete-contact/?id=<%= i._id %>">
+        <i class="fas fa-window-close"></i>
+    </a>
+</div>

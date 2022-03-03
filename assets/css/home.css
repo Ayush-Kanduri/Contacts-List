@@ -1,0 +1,95 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+#header {
+	text-align: center;
+	margin-top: 25px;
+	color: gray;
+	font-size: 3.5rem;
+}
+ul {
+	width: 30%;
+	margin: auto;
+	overflow: hidden;
+}
+#contact-box {
+	padding-left: 4%;
+	margin: auto;
+}
+#form-div {
+	padding-left: 25px;
+	margin: auto;
+	margin-top: 2.5rem;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#form > input {
+	outline: none;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+.contact-tag {
+	list-style: none;
+	background-color: #638ffc;
+	border-radius: 10px;
+	color: white;
+	border-radius: 7px;
+	padding: 4px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1.5%;
+	overflow: hidden;
+	margin-left: -2.5rem;
+	width: 100%;
+}
+.contact-tag {
+	padding: 2px;
+}
+#form > button {
+	background-color: grey;
+	color: white;
+	padding: 0.1rem;
+}
+.contact-tag:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+#delete-button {
+	width: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#delete-button a {
+	width: 100%;
+	text-align: center;
+	height: fit-content;
+	color: red;
+}
+#delete-button > a :hover {
+	color: white;
+}
+#contact-details {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: monospace;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+.name {
+	padding-left: 3%;
+}

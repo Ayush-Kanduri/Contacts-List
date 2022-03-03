@@ -1,0 +1,18 @@
+//Create-Contact Page Form URL Controller
+app.post("/create-contact", (request, response) => {
+	// return response.redirect("/practice");
+
+	// console.log(request.body);
+	// console.log(request.body.name);
+	// console.log(request.body.phone);
+
+	// contactList.push({
+	// 	name: request.body.name,
+	// 	phone: request.body.phone,
+	// });
+
+	// return response.redirect("/");
+
+	contactList.push(request.body);
+	return response.redirect("back");
+});

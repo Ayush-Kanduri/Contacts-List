@@ -1,0 +1,32 @@
+For Local Data:-
+
+//Create-Contact Page Form URL Controller
+app.post("/create-contact", (request, response) => {
+	//Add a new Contact Object into the Contact List Array
+	contactList.push(request.body);
+
+    //Redirect to the Home Page URL where the updated Contact List is displayed
+	return response.redirect("back");
+});
+
+For MongoDB:-
+
+//Create-Contact Page Form URL Controller
+app.post("/create-contact", (request, response) => {
+	//Add a new Contact into the DB
+	Contact.create(
+		{
+			name: request.body.name,
+			phone: request.body.phone,
+		},
+		(err, newContact) => {
+			if (err) {
+				console.log("Error in Creating a Contact");
+				return;
+			}
+			console.log("*******", newContact, "*******");
+			//Redirect to the Home Page URL where the updated Contact List is displayed
+			return response.redirect("back");
+		}
+	);
+});

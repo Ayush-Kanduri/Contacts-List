@@ -1,0 +1,28 @@
+For local storage:-
+
+//Home Page URL Controller
+app.get("/", (request, response) => {
+	//Send the EJS View Response to the clients
+	return response.render("home", {
+		title: "Contact List",
+		contact_list: contactList,
+	});
+});
+
+For mongodb:-
+
+//Home Page URL Controller
+app.get("/", (request, response) => {
+	//Fetches the Contact List from the Database based on any condition or all of them.
+	Contact.find({}, (err, contacts) => {
+		if (err) {
+			console.log("Error in fetching the contacts from DB");
+			return;
+		}
+		//Send the EJS View Response to the clients
+		return response.render("home", {
+			title: "Contact List",
+			contact_list: contacts,
+		});
+	});
+});

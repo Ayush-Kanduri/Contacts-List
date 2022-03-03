@@ -1,0 +1,4 @@
+app.get("/", (request, response) => {
+	console.log(__dirname);
+	return response.render("home");
+});

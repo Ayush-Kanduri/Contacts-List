@@ -1,0 +1,27 @@
+app.get("/", (request, response) => {
+	response.send(`Express Server is Up & Running Successfully on Port ${port}`);
+});
+
+app.get("/", (request, response) => {
+	response.send(`<h1>Express Server is Up & Running Successfully on Port ${port}</h1>`);
+});
+
+//Home Page Controller
+app.get("/", (request, response) => {
+	////Send the Response to the clients
+	//response.send(`Express Server is Up & Running Successfully on Port ${port}`);
+
+	//Global Dynamic Variable for directory path
+	console.log(__dirname);
+
+	////Request information from the clients
+	// console.log(request);
+
+	// //Send the Response to the clients
+	// response.send(
+	// 	`<h1>Express Server is Up & Running Successfully on Port ${port}</h1>`
+	// );
+
+	//Send the EJS View Response to the clients
+	return response.render("home");
+});

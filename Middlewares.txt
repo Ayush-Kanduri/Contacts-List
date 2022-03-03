@@ -1,0 +1,19 @@
+//Middleware - URL Encoder
+app.use(express.urlencoded());
+
+//Middleware - Static Files
+app.use(express.static("assets"));
+
+//Middleware 1
+app.use((request, response, next) => {
+	request.myname = "AJAX";
+	console.log("Middleware 1");
+	next();
+});
+
+//Middleware 2
+app.use((request, response, next) => {
+	console.log("Middleware 2");
+	console.log("My Name from Middleware 2:", request.myname);
+	next();
+});

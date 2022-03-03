@@ -1,0 +1,11 @@
+<a href="/delete-contact/<%= i.phone %>">
+<i class="fas fa-window-close"></i>
+</a>
+
+//Delete-Contact Page URL Controller
+app.get("/delete-contact/:phone", (request, response) => {
+	//Get the Phone Number from the String Param URL
+	console.log(request.params);
+	console.log(request.params.phone);
+	let phone = request.params.phone;
+});

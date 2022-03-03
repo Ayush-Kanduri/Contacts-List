@@ -1,0 +1,17 @@
+<a href="/delete-contact/?phone=<%= i.phone %>">
+<i class="fas fa-window-close"></i>
+</a>
+
+<a href="/delete-contact/?phone=<%= i.phone %>&name=<%= i.name %>">
+<i class="fas fa-window-close"></i>
+</a>
+
+//Delete-Contact Page URL Controller
+app.get("/delete-contact", (request, response) => {
+	//Get the Phone Number from the Query Param URL
+	console.log(request.query);
+	console.log(request.query.phone);
+	console.log(request.query.name);
+	let phone = request.query.phone;
+	let name = request.query.name;
+});
