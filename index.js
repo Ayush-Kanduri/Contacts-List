@@ -74,7 +74,7 @@ app.post("/create-contact", (request, response) => {
 				console.log("Error in Creating a Contact");
 				return;
 			}
-			console.log("*******", newContact, "*******");
+			// console.log("*******", newContact, "*******");
 			//Redirect to the Home Page URL where the updated Contact List is displayed
 			return response.redirect("back");
 		}
