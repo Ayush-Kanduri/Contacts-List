@@ -26,10 +26,10 @@ This website is completely Responsive across all the Devices.
 -  Run 'npm install' in GitBash Terminal
 -  Go to 'package.json' & inside the 'SCRIPTS', find "start":"...." <br/>
    Change it to - "start": "nodemon index.js",
--  If you want to run the project in development mode locally then go to '.env' file & set,
+-  If you want to run the project in development mode locally then go to '.env' file & set,<br/>
    ENVIRONMENT=development <br/>
    DEPLOYMENT=local
--  If you want to run the project in production mode locally then go to '.env' file & set,
+-  If you want to run the project in production mode locally then go to '.env' file & set,<br/>
    ENVIRONMENT=production <br/>
    DEPLOYMENT=local
 -  Change "module.exports = production" to "module.exports = development" or vice-versa in the 'environment.js' file as per the requirement.
