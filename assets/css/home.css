@@ -23,6 +23,7 @@ ul {
 #contact-box {
 	padding-left: 4%;
 	margin: auto;
+	width: 100%;
 }
 #form-div {
 	padding-left: 25px;
@@ -89,7 +90,26 @@ ul {
 	font-family: monospace;
 	font-weight: 700;
 	font-size: 1.1rem;
+	word-break: break-all;
 }
 .name {
 	padding-left: 3%;
+}
+
+@media screen and (max-width: 800px) {
+	ul {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	ul {
+		width: 95%;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		width: 100%;
+	}
 }
