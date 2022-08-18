@@ -1,8 +1,48 @@
-# Contacts-List_BackEnd_Project_MENStack
-This is a Contacts List Project which is designed using the Back-End Technology of MEN Stack (MongoDB, ExpressJS, NodeJS). In this project user can add, delete, read the contacts from the list. 
+# 𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐬 𝐋𝐢𝐬𝐭 🚀
 
-## Tools Used
-<p align="left">
+<br/>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/76626529/185291796-93e47c6f-7d35-4eac-823e-5372c9c2b9ab.png">
+</p>
+
+## ⭐ Introduction
+
+This is a Contacts List Project which is designed using Full Stack Web Development through Back-End Technology of MEN Stack (MongoDB, ExpressJS, NodeJS). It implements RESTFUL-APIs.
+
+This website is completely Responsive across all the Devices.
+
+-  Users are able to Add New Contacts.
+-  Users are able to Delete Existing Contacts.
+-  Users are able to Read Existing Contacts.
+   <br/>
+   <br/>
+
+## 🔥 Getting Started With The Project
+
+-  Fork the Project in your Repository.
+-  Clone the Forked Repository in your Local System.
+-  Install & Configure - NodeJS, MongoDB, Robo3T.
+-  Create '.env' file & Set the Environment Variables in it, as per the 'ENV_FORMAT.json' file.
+-  Run 'npm install' in GitBash Terminal
+-  Go to 'package.json' & inside the 'SCRIPTS', find "start":"...." <br/>
+   Change it to - "start": "nodemon index.js",
+-  If you want to run the project in development mode locally then go to '.env' file & set,
+   ENVIRONMENT=development <br/>
+   DEPLOYMENT=local
+-  If you want to run the project in production mode locally then go to '.env' file & set,
+   ENVIRONMENT=production <br/>
+   DEPLOYMENT=local
+-  Change "module.exports = production" to "module.exports = development" or vice-versa in the 'environment.js' file as per the requirement.
+-  Run 'npm start' in GitBash Terminal
+-  Enjoy :)
+
+For any issues related to the project, raise an ISSUE in the respective Repository.
+<br/>
+<br/>
+
+## 🔨 Tools Used
+
+<p align="justify">
 <img height="140" width="140" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png">
 <img height="140" width="140" src="https://logodix.com/logo/470309.png">
 <img height="140" width="140" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
@@ -12,38 +52,47 @@ This is a Contacts List Project which is designed using the Back-End Technology 
 <img height="140" width="140" src="https://code.visualstudio.com/assets/apple-touch-icon.png">
 </p>
 
-#
+-  Library:
 
-* Library: None
-* Framework: ExpressJS
-* Database: MongoDB
-* Version Control System: Git
-* VCS Hosting: GitHub
-* Programming / Scripting: JavaScript
-* Front-End: HTML, CSS, EJS
-* Runtime Environment: NodeJS
-* Integrated Development Environment: VSCode
+   -  cors
+   -  dotenv
+   -  ejs
+   -  express
+   -  mongoose
+   -  nodemon
 
-#
-> #### Checkout the Website [Web Application](X)
-> #### Checkout the Application Demo Video [YouTube](https://youtu.be/g2QPnT0fl9s)
-#
+-  Framework: ExpressJS
+-  Database: MongoDB
+-  Version Control System: Git
+-  VCS Hosting: GitHub
+-  Programming / Scripting: JavaScript
+-  Front-End: HTML, CSS, EJS
+-  Runtime Environment: NodeJS
+-  Integrated Development Environment: VSCode
+   <br/>
+   <br/>
 
-## Screens
-<p align="left">
-<!-- <img height="200" width="400" src="https://user-images.githubusercontent.com/76626529/154794497-95b4c730-bc5e-4b52-87cf-93821d28cd10.png">
-<img height="200" width="400" src="https://user-images.githubusercontent.com/76626529/154794499-c1ba66c7-831c-4eab-8aea-9e06952dc05c.png">
-<img height="200" width="400" src="https://user-images.githubusercontent.com/76626529/154794500-a18a15d1-c851-4afc-9f9d-a676debf758f.png">
-<img height="200" width="400" src="https://user-images.githubusercontent.com/76626529/154794502-5d80657e-02bf-4b0f-aedc-f829d654809b.png">
-<img height="200" width="400" src="https://user-images.githubusercontent.com/76626529/154794503-d57a4dbb-3469-40fc-94c9-92d335320acd.png"> -->
+## 🔗 Links
+
+> ## Checkout the Website [Web Application](https://contacts-list-application.herokuapp.com/)
+>
+> ## Checkout the Application Demo Video [YouTube](https://youtu.be/g2QPnT0fl9s)
+
+<br/>
+
+## 💻 Screens
+
+<p align="justify">
+<img src="https://user-images.githubusercontent.com/76626529/185291796-93e47c6f-7d35-4eac-823e-5372c9c2b9ab.png">
 </p>
+<br/>
 
+## 🐦 Follow Me:
 
-## Follow me on:
 > [Dev Community](https://dev.to/ayushkanduri)
 
 > [Twitter](https://twitter.com/ayush_codes)
- 
+
 > [LinkedIn](https://www.linkedin.com/in/ayushkanduri/)
 
 > [YouTube](https://www.youtube.com/channel/UC6c1ajC_2jF7wQp7Y13t2bg)
