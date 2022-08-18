@@ -53,14 +53,12 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 </p>
 
 -  Library:
-
    -  cors
    -  dotenv
    -  ejs
    -  express
    -  mongoose
    -  nodemon
-
 -  Framework: ExpressJS
 -  Database: MongoDB
 -  Version Control System: Git
