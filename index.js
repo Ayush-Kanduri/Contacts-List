@@ -10,6 +10,13 @@ const db = require("./config/mongoose");
 const Contact = require("./models/contact");
 //Create Express App for Request-Response Cycle & to create the Express Server
 const app = express();
+//Require the Cors Module for Cross-Origin Resource Sharing
+const cors = require("cors");
+//Require the environment File for getting the Environment Variables
+const env = require("./config/environment");
+
+//Use the Cors Module
+app.use(cors());
 
 //Set Up Template Engine as EJS
 app.set("view engine", "ejs");
