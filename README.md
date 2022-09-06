@@ -72,7 +72,7 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 
 ## 🔗 Links
 
-> ## Checkout the Website [Web Application](https://contacts-list-application.herokuapp.com/)
+> ## Checkout the Website [Web Application](https://contacts-list.onrender.com)
 >
 > ## Checkout the Application Demo Video [YouTube](https://youtu.be/g2QPnT0fl9s)
 
